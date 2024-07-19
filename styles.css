@@ -37,6 +37,7 @@
     position: relative;
 }
 .video-item a {
+    font-family: "Montserrat";
     display: block;
     text-decoration: none;
     color: black;
