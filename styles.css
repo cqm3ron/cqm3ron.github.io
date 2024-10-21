@@ -1,6 +1,7 @@
 body {
     font-family: "Montserrat", sans-serif;
 }
+
 .h1 {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -8,37 +9,44 @@ body {
     font-size: 64px;
     text-align: center;
 }
+
 .h2 {
     font-family: "Montserrat";
     font-size: 24px;
     text-align: center;
 }
+
 .h3 {
     font-family: "Montserrat";
     font-size: 18.72px;
     text-align: center;
 }
+
 .h4 {
     font-family: "Montserrat";
     font-size: 16px;
     text-align: center;
 }
+
 .footer {
     font-family: "Montserrat";
     font-size: small;
     text-align: center;
     color: rgb(87, 87, 87);
 }
+
 .video-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
+
 .video-item {
     width: calc(25% - 20px);
     box-sizing: border-box;
     position: relative;
 }
+
 .video-item a {
     font-family: "Montserrat";
     display: block;
@@ -48,6 +56,7 @@ body {
     padding-bottom: 56.25%;
     overflow: hidden;
 }
+
 .video-item img {
     position: absolute;
     top: 0;
@@ -56,8 +65,42 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
 .video-item h3 {
     margin: 10px 0 0 0;
     font-size: 16px;
     position: relative;
+}
+
+:root {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    --text-primary: #F0F0F0;
+    --text-secondary: #ECECEC;
+    --bg-primary: #222222;
+    --bg-secondary: #3b3b3b;
+    --accent: #8B0000;
+}
+
+body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--accent);
+}
+
+main {
+    margin-left: 5rem;
 }
