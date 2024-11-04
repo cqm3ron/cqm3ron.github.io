@@ -69,6 +69,7 @@ main {
 }
 
 ul {
+  font-family: "Bebas Neue", sans-serif;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -81,6 +82,7 @@ li {
 }
 
 li a {
+  font-family: "Bebas Neue", sans-serif;
   display: block;
   color: white;
   text-align: center;
@@ -94,5 +96,5 @@ li a:hover {
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: #A10;
 }
