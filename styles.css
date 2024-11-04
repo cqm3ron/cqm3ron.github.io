@@ -96,4 +96,5 @@ li a:hover {
 }
 
 .active {
-    background-color: var(--accent)
+    background-color: var(--accent);
+}
