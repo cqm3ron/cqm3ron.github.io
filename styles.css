@@ -2,47 +2,40 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-.h1 {
+h1 {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
-    font-style: normal;
     font-size: 64px;
     text-align: center;
+    display: block
 }
 
-.h2 {
-    font-family: "Montserrat";
-    font-size: 24px;
-    text-align: center;
-}
-
-.h3 {
-    font-family: "Montserrat";
-    font-size: 18.72px;
-    text-align: center;
-}
-
-.h4 {
-    font-family: "Montserrat";
-    font-size: 16px;
+h2,h3,h4 {
     text-align: center;
 }
 
 .footer {
-    font-family: "Montserrat";
     font-size: small;
     text-align: center;
     color: rgb(87, 87, 87);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    background: rgb(51,51,51);
+    color: #FFF;
+    padding-bottom: 10px;
 }
 
-:root {
-    font-size: 16px;
-    font-family: 'Montserrat';
-    --text-primary: #F0F0F0;
-    --text-secondary: #ECECEC;
-    --bg-primary: #222222;
-    --bg-secondary: #3b3b3b;
-    --accent: #8B0000;
+.footer a {
+    color: #A10;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #FFF;
+    transition: 0.2s;
 }
 
 body {
@@ -52,23 +45,7 @@ body {
     padding: 0;
 }
 
-body::-webkit-scrollbar {
-    width: 0.25rem;
-}
-
-body::-webkit-scrollbar-track {
-    background: var(--bg-primary);
-}
-
-body::-webkit-scrollbar-thumb {
-    background: var(--accent);
-}
-
-main {
-    margin-left: 5rem;
-}
-
-ul {
+.navbar {
   font-family: "Bebas Neue", sans-serif;
   list-style-type: none;
   margin: 0;
@@ -77,11 +54,11 @@ ul {
   background-color: #333;
 }
 
-li {
+.navbar li {
   float: left;
 }
 
-li a {
+.navbar li a {
   font-family: "Bebas Neue", sans-serif;
   display: block;
   color: white;
@@ -90,11 +67,21 @@ li a {
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
+.navbar li a:hover {
   background-color: #111;
+  transition: 0.3s;
 }
+
 
 .active {
   background-color: #A10;
+}
+
+.pixelly-logo-about-me{
+    margin: auto;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
