@@ -28,9 +28,14 @@ h2,h3,h4 {
     padding-bottom: 10px;
 }
 
-.footer a {
+a {
     color: #A10;
     text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    transition: 0.2s;
 }
 
 .footer a:hover {
@@ -70,11 +75,6 @@ body {
 .navbar li a:hover {
   background-color: #111;
   transition: 0.3s;
-}
-
-a {
-  text-decoration: none;
-  color: #111
 }
 
 .active {
