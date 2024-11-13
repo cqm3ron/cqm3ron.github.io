@@ -34,7 +34,7 @@ a {
 }
 
 a:hover {
-    color: black;
+    color: #000;
     transition: 0.2s;
 }
 
