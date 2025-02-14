@@ -83,18 +83,16 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
     gap: 20px;
-    text-align: center;
-    border-color: #111;
-    border-width: 1rem;
-    border-style: solid;
+    padding: 20px;
     width: 100%;
-    padding: 0;
     margin: 10px auto;
 }
 
+/* Each individual project */
 .project-item {
     background-color: #f4f4f4;
     padding: 20px;
+    border: 2px solid #111; /* Apply border to individual project items */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
