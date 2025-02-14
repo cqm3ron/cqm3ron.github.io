@@ -1,5 +1,9 @@
 body {
     font-family: "Montserrat", sans-serif;
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -7,7 +11,7 @@ h1 {
     font-weight: 400;
     font-size: 64px;
     text-align: center;
-    display: block
+    display: block;
 }
 
 h2,h3,h4 {
@@ -43,63 +47,72 @@ a:hover {
     transition: 0.2s;
 }
 
-body {
-    color: black;
-    background-color: white;
+.navbar {
+    font-family: "Bebas Neue", sans-serif;
+    list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-.navbar {
-  font-family: "Bebas Neue", sans-serif;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+    overflow: hidden;
+    background-color: #333;
 }
 
 .navbar li {
-  float: left;
+    float: left;
 }
 
 .navbar li a {
-  font-family: "Bebas Neue", sans-serif;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 .navbar li a:hover {
-  background-color: #111;
-  transition: 0.3s;
+    background-color: #111;
+    transition: 0.3s;
 }
 
 .active {
-  background-color: #A10;
+    background-color: #A10;
 }
 
-.project-list {
-  text-align: center;
-  display: inline-block;
-  list-style: none;
-  padding: 0 0;
-}
-
+/* Project Grid */
 .project-list-div {
-  text-align: center;
-  border-color: #111;
-  border-width: 1rem;
-  border-style: solid;
-  width: 48%;
-  display: block;
-  padding: 0 0;
-  margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px;
+    text-align: center;
+    border-color: #111;
+    border-width: 1rem;
+    border-style: solid;
+    width: 100%;
+    padding: 0;
+    margin: 10px auto;
+}
+
+.project-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .projectimage {
-  width: 100%;
-  padding: 0 0;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-item figcaption {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* Mobile-friendly Adjustments */
+@media (max-width: 768px) {
+    .project-list-div {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
 }
